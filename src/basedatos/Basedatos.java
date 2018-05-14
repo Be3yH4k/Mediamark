@@ -22,7 +22,7 @@ public class Basedatos {
             Statement s = conexion.createStatement();
 
             // Se realiza la consulta. Los resultados se guardan en el ResultSet rs
-            ResultSet rs = s.executeQuery("select ID, Nombre, Precio from Producto");
+            ResultSet rs = s.executeQuery("select Nombre, Precio from Producto");
 
             // Se recorre el ResultSet, mostrando por pantalla los resultados.
             while (rs.next()) {
